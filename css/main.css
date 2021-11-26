@@ -35,10 +35,14 @@ h2 {
   color: #a5252e;
 }
 
+legend {
+  display: none;
+}
+
 main {
   display: flex;
   flex-direction: column;
-  margin: 2rem auto;
+  margin: 0 auto;
   max-width: 40rem;
   border-radius: 0.625rem;
 }
