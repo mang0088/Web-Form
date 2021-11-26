@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GrrBnB</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: ws: https://ssl.gstatic.com; 
+    style-src 'self' https://fonts.googleapis.com; 
+    font-src 'self' data: https://fonts.gstatic.com;
+    media-src *; 
+    img-src 'self' data: content:;"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <img src="img/nike-bg.png" alt="Poster" />
+      </div>
+      <form id="input-form" name="input-form" action="#" method="post">
+        <div class="form-box headers">
+          <h1>Find Your True Potential</h1>
+          <h2>Join now to get exciting rewards!!</h2>
+        </div>
+        <div class="form-box full-name">
+          <span>
+            <input
+              class="clean-slide"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Robert Persian"
+            />
+            <label for="name">Full Name</label>
+          </span>
+        </div>
+        <div class="form-box phone-number">
+          <span>
+            <input
+              class="clean-slide"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(111) 111 - 1111"
+            />
+            <label for="phone">Phone Number</label>
+          </span>
+        </div>
+        <div class="form-box email-adress">
+          <span>
+            <input
+              class="clean-slide"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="rtpersian@nike.com"
+              required
+            />
+            <label for="email">Email</label>
+          </span>
+        </div>
+        <div class="form-box password">
+          <span>
+            <input
+              class="clean-slide"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <label for="password">Password</label>
+          </span>
+        </div>
+        <div class="form-box submit">
+          <button class="sub-btn" type="submit" value="submit">Sign Up</button>
+          <p>
+            Already have an account?
+            <a href="signin.html" tabindex="0">SignIn</a>
+          </p>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

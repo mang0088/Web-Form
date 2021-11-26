@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+  display: grid;
+  background-color: #a5252e;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 0.1em;
+  color: #040404;
+  font-size: 0.875rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin-bottom: 0.313rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 0.938rem;
+  color: #a5252e;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  max-width: 40rem;
+  border-radius: 0.625rem;
+}
+
+a:hover {
+  color: tomato;
+}
+
+.left {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1.188rem 2.375rem,
+    rgba(0, 0, 0, 0.22) 0rem 0.938rem 0.75rem;
+}
+
+.left img {
+  width: 25rem;
+  height: 100%;
+  border-radius: 0.265rem 0.265rem 0 0;
+}
+
+.form-box {
+  padding: 0.8rem 0rem;
+}
+
+.form-box.submit {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box.submit p,
+.form-box.submit a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin-top: 1.6rem;
+}
+
+.form-box.submit a {
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.6rem;
+  background-color: #ffffff;
+  border-radius: 0 0 0.265rem 0.256rem;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1.188rem 2.375rem,
+    rgba(0, 0, 0, 0.22) 0rem 0.938rem 0.75rem;
+}
+
+.sub-btn {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  width: 140px;
+  padding: 10px 0;
+  background-color: #a5252e;
+  color: white;
+  outline: 4px outset red;
+  transition: all ease-in-out 300ms;
+  cursor: pointer;
+}
+
+.sub-btn:hover {
+  outline: 5px outset darkred;
+  outline-offset: -5px;
+  animation: cngColor 3s infinite linear;
+}
+
+/* style input */
+
+span {
+  position: relative;
+  display: inline-block;
+}
+
+.clean-slide {
+  position: relative;
+  display: inline-block;
+  width: 285px;
+  padding: 10px 0 10px 15px;
+  font-family: 'Open Sans', sans;
+  font-weight: 400;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 135px;
+  transition: all 0.3s ease-in-out;
+}
+.clean-slide::-webkit-input-placeholder {
+  color: #efefef;
+  text-indent: 0;
+  font-weight: 300;
+}
+.clean-slide + label {
+  display: inline-block;
+  position: absolute;
+  transform: translateX(0);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 13px 15px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #032429;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease-in-out, color 0.3s ease-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  overflow: hidden;
+}
+.clean-slide + label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  width: 100%;
+  background: darkred;
+  z-index: -1;
+  transform: translate(0);
+  transition: all 0.3s ease-in-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.clean-slide:focus,
+.clean-slide:active {
+  color: darkred;
+  text-indent: 0;
+  background: lightblue;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.clean-slide:focus::-webkit-input-placeholder,
+.clean-slide:active::-webkit-input-placeholder {
+  color: #aaa;
+}
+.clean-slide:focus + label,
+.clean-slide:active + label {
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+  transform: translateX(-100%);
+}
+.clean-slide:focus + label:after,
+.clean-slide:active + label:after {
+  transform: translate(100%);
+}
+
+@keyframes cngColor {
+  0% {
+    background: rgb(139, 0, 139);
+  }
+  25% {
+    background-color: rgb(220, 20, 60);
+  }
+  50% {
+    background: red;
+  }
+  75% {
+    background-color: rgb(220, 20, 60);
+  }
+  100% {
+    background: rgb(139, 0, 139);
+  }
+}
+
+@media only screen and (min-width: 45rem) {
+  .left img {
+    border-radius: 0.265rem 0 0 0.265rem;
+  }
+
+  main {
+    flex-direction: row;
+    margin: auto;
+    max-width: 50rem;
+    height: 29rem;
+  }
+
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0 0.265rem 0.265rem 0;
+  }
+
+  .form-box.submit p,
+  .form-box.submit a {
+    margin-top: 0.8rem;
+  }
+}
